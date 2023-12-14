@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <h1>Task Manager</h1>
+        <input type="text" id="searchFilter" placeholder="Search Tasks">
+    </div>
+    <div class="task-cotainer">
+        <fieldset>
+            <legend>Task Details</legend>
+            <div class="item">
+                <label for="taskName">Task Name:</label>
+                <input type="text" id="taskName" placeholder="Task Name">
+                <span></span>
+            </div>
+            <div class="item">
+                <label for="taskDescription">Task Description:</label>
+                <textarea id="taskDescription" placeholder="Task Description"></textarea>
+                <span></span>
+            </div>
+            <div class="item">
+                <label for="assignedTo">Assigned To:</label>
+                <input type="text" id="assignedTo" placeholder="Assigned To">
+                <span></span>
+            </div>
+            <div class="item">
+                <label for="dueDate">Due Date:</label>
+                <input type="date" name="dueDate" id="dueDate">
+                <span></span>
+            </div>
+            <div class="item">
+                <label>Priority:</label>
+                <select name="priority" id="priority">
+                    <option value="high">high</option>
+                    <option value="medium">medium</option>
+                    <option value="low">low</option>       		        		        		
+                </select>
+            </div>
+            <div class="item">
+                <label>Status:</label>
+                <select name="status" id="status">
+                    <option value="new">new</option>
+                    <option value="inprogress">inProgress</option>
+                    <option value="completed">completed</option>       		        		        		
+                </select>
+            </div>
+        </fieldset>
+        <div>
+            <button id="addTask">Add Task</button>
+        </div>
+</div>
+<br><br>
+<div class="tasks-div">
+    <div>
+          
+        <table id="task-display-table">
+            <tr>
+            <th>Task Name</th>
+            <th>Description</th>
+            <th>Assigned To</th>
+            <th>Due Date</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Actions</th>
+            </tr>
+        </table>
+    </div>
+</div>
+<br><br>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
